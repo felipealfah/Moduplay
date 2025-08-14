@@ -1,4 +1,5 @@
 import { Check, Target, Award, Users } from "lucide-react";
+import videoAbout from "../assets/video_about.mp4";
 
 const About = () => {
   const benefits = [
@@ -11,8 +12,8 @@ const About = () => {
   ];
 
   const stats = [
-    { icon: Award, label: "Anos de Experiência", value: "15+" },
-    { icon: Users, label: "Projetos Concluídos", value: "500+" },
+    { icon: Award, label: "Anos de Experiência", value: "10+" },
+    { icon: Users, label: "Projetos Concluídos", value: "100+" },
     { icon: Target, label: "Satisfação", value: "98%" }
   ];
 
@@ -61,16 +62,18 @@ const About = () => {
 
           {/* Image */}
           <div className="relative">
-            <div className="aspect-square rounded-2xl overflow-hidden shadow-strong">
-              <img 
-                src="/api/placeholder/600/600" 
-                alt="Equipe ModuPlay trabalhando em instalação de piso" 
-                className="w-full h-full object-cover"
+            <div className="aspect-square rounded-2xl overflow-hidden shadow-strong bg-[#30359e]">
+              <video
+                src={videoAbout}
+                className="w-full h-full object-contain"
+                controls
+                loop
+                playsInline
               />
             </div>
             
             {/* Floating Card */}
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-strong animate-float">
+            <div className="absolute top-6 right-6 bg-white p-6 rounded-xl shadow-strong animate-float">
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary">48h</div>
                 <div className="text-sm text-muted-foreground">Instalação Express</div>

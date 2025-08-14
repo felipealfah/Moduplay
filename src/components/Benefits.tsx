@@ -74,7 +74,7 @@ const Benefits = () => {
         <div className="mt-20 bg-white rounded-2xl p-8 md:p-12 shadow-medium">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">500+</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">100+</div>
               <div className="text-sm md:text-base text-muted-foreground">Projetos Concluídos</div>
             </div>
             <div>

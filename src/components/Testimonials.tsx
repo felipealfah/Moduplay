@@ -42,7 +42,7 @@ const Testimonials = () => {
             O que nossos clientes dizem
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Mais de 500 projetos realizados com satisfação garantida. 
+            Mais de 100 projetos realizados com satisfação garantida. 
             Confira os depoimentos de quem já transformou seu espaço esportivo conosco.
           </p>
         </div>
@@ -84,7 +84,7 @@ const Testimonials = () => {
         <div className="bg-white rounded-2xl p-8 md:p-12 shadow-medium">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">500+</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">100+</div>
               <div className="text-sm text-muted-foreground">Projetos Concluídos</div>
             </div>
             <div>

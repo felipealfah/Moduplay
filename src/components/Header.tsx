@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Menu } from "lucide-react";
+import logo from "@/assets/ModuPlay.png";
 
 const Header = () => {
   const scrollToSection = (id: string) => {
@@ -8,39 +9,38 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 glass-effect border-b">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#4733ba] border-b">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center space-x-2">
-          <div className="w-10 h-10 primary-gradient rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-xl">M</span>
-          </div>
-          <span className="text-xl font-bold text-primary">ModuPlay</span>
+        <div className="text-2xl font-bold text-primary">
+          <a href="#home" onClick={() => scrollToSection('home')}>
+            <img src={logo} alt="ModuPlay Pisos Esportivos" className="h-10 w-auto" />
+          </a>
         </div>
 
         {/* Navigation - Desktop */}
         <nav className="hidden lg:flex items-center space-x-8">
           <button 
             onClick={() => scrollToSection('sobre')}
-            className="text-foreground hover:text-primary transition-colors font-medium"
+            className="text-white hover:text-primary transition-colors font-medium"
           >
             Sobre
           </button>
           <button 
             onClick={() => scrollToSection('produtos')}
-            className="text-foreground hover:text-primary transition-colors font-medium"
+            className="text-white hover:text-primary transition-colors font-medium"
           >
             Produtos
           </button>
           <button 
             onClick={() => scrollToSection('galeria')}
-            className="text-foreground hover:text-primary transition-colors font-medium"
+            className="text-white hover:text-primary transition-colors font-medium"
           >
             Galeria
           </button>
           <button 
             onClick={() => scrollToSection('contato')}
-            className="text-foreground hover:text-primary transition-colors font-medium"
+            className="text-white hover:text-primary transition-colors font-medium"
           >
             Contato
           </button>
@@ -51,7 +51,7 @@ const Header = () => {
           <a href="tel:+556198488037" className="hidden sm:flex">
             <Button variant="outline" size="sm" className="gap-2">
               <Phone className="w-4 h-4" />
-              (61) 9848-8037
+              (61) 99848-8037
             </Button>
           </a>
           <Button variant="cta" size="sm" onClick={() => scrollToSection('contato')}>

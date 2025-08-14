@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/ModuPlay.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -33,10 +34,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-primary font-bold text-xl">M</span>
-              </div>
-              <span className="text-2xl font-bold">ModuPlay</span>
+              <img src={logo} alt="ModuPlay Pisos Esportivos" className="h-10 w-auto" />
             </div>
             
             <p className="text-white/80 leading-relaxed">

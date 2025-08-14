@@ -4,6 +4,10 @@ import { ArrowRight, Zap, Shield, Gamepad2, Users, TreePine, Wrench } from "luci
 import flooringImage from "@/assets/flooring-detail.jpg";
 import playgroundImage from "@/assets/playground.jpg";
 import grassImage from "@/assets/synthetic-grass.jpg";
+import outdoorPerformanceImage from "@/assets/outdor_performance.jpeg";
+import outdoorImpactImage from "@/assets/outdoor_impact.jpeg";
+import outdoorPlayImage from "@/assets/outdoor_play.jpeg";
+import outdoorImpactProImage from "@/assets/outdor_impact_pro.jpeg";
 
 const Products = () => {
   const mainProducts = [
@@ -11,25 +15,25 @@ const Products = () => {
       title: "Outdoor Performance",
       description: "Piso de alta performance para quadras profissionais",
       icon: Zap,
-      image: flooringImage
+      image: outdoorPerformanceImage
     },
     {
       title: "Outdoor Impact",
       description: "Absorção superior de impactos para máxima segurança",
       icon: Shield,
-      image: flooringImage
+      image: outdoorImpactImage
     },
     {
       title: "Outdoor Play",
       description: "Ideal para áreas recreativas e poliesportivas",
       icon: Gamepad2,
-      image: flooringImage
+      image: outdoorPlayImage
     },
     {
       title: "Outdoor Impact Pro",
       description: "Linha premium com tecnologia avançada",
       icon: Zap,
-      image: flooringImage
+      image: outdoorImpactProImage
     }
   ];
 

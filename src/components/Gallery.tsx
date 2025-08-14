@@ -2,10 +2,12 @@ import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
-import heroImage from "@/assets/hero-court.jpg";
-import flooringImage from "@/assets/flooring-detail.jpg";
+import heroImage from "@/assets/galery/04.jpeg";
+import flooringImage from "@/assets/galery/01.jpeg";
 import playgroundImage from "@/assets/playground.jpg";
 import grassImage from "@/assets/synthetic-grass.jpg";
+import recreative from "@/assets/galery/10.jpg";
+import tenis from "@/assets/galery/11.jpeg";
 
 const Gallery = () => {
   const [activeCategory, setActiveCategory] = useState('todos');
@@ -50,14 +52,14 @@ const Gallery = () => {
       id: 5,
       title: "Área Recreativa",
       category: "playgrounds",
-      image: playgroundImage,
+      image: recreative,
       description: "Espaço infantil seguro e colorido"
     },
     {
       id: 6,
       title: "Quadra de Tênis",
       category: "quadras",
-      image: heroImage,
+      image: tenis,
       description: "Superfície profissional para alta performance"
     }
   ];
